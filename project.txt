@@ -1,0 +1,17 @@
+Pokemon App :D
+
+STATE
+- app holds all state, passes it down to header and pokemonCards
+- state for:
+    - cards clicked
+    - score
+    - high score
+
+FUNCTIONALITY
+- update score
+- set best score
+- end game
+- on click:
+    - display cards in random order each time one is clicked
+    - if card hasn't been clicked, +1 score and randomise cards
+    - if card has been clicked, reset score, and randomise cards (maybe some sort of animation in there)

@@ -1,0 +1,10 @@
+{
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "workbench.iconTheme": "vscode-icons-mac",
+    "workbench.activityBar.visible": true,
+    "workbench.colorCustomizations": {
+    
+    },
+    "editor.suggest.showStatusBar": false,
+    "zenMode.hideStatusBar": true
+}
