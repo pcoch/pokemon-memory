@@ -54,8 +54,5 @@ body {
   flex-direction: column;
   font-family: 'Pokemon Solid', sans-serif;
   letter-spacing: 2px;
-  background-image: url(../assets/background.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #ffffff;
 }

@@ -10,9 +10,6 @@ export function App() {
   //state for high score
   const [highScore, setHighScore] = useState(0);
 
-  //state for game status
-  const [gameStatus, setGameStatus] = useState();
-
   //state for clicked pokemon
   const [chosenPokemon, setChosenPokemon] = useState([]);
 
@@ -21,20 +18,22 @@ export function App() {
     if (!chosenPokemon.includes(e.target.id)) {
       setChosenPokemon((arr) => [...arr, e.target.id]);
       setScore(score + 1);
+    }
+
+    if (chosenPokemon.includes(e.target.id)) {
       if (score > highScore) {
         setHighScore(score);
-      } else {
-        setHighScore(highScore);
       }
-    } else {
       setScore(0);
-      setHighScore(score + 1);
+      setChosenPokemon([]);
+    }
+
+    if (chosenPokemon.length === 12) {
+      setScore(0);
+      setChosenPokemon([]);
+      setHighScore(score);
     }
   }
-
-  console.log(chosenPokemon);
-  console.log(`Score is ${score}`);
-  console.log(`Highscore is ${highScore}`);
 
   return (
     <div>

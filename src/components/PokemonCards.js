@@ -6,9 +6,9 @@ const PokemonCards = ({ clickPokemon }) => {
   const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
   const newPokedex = shuffle(pokedex);
 
-  const pokemon = newPokedex.filter((pokemon) => pokemon);
+  const pokemons = newPokedex.filter((pokemon) => pokemon);
 
-  const galleryItems = pokemon.map((pokemon) => (
+  const galleryItems = pokemons.map((pokemon) => (
     <div
       onClick={clickPokemon}
       key={pokemon.id}
